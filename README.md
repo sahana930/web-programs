@@ -6,4 +6,9 @@ program1 output
 
 program 2 output
 ![Screenshot (8)](https://github.com/sahana930/web-programs/assets/136681776/535b7193-76a3-4450-8e3f-286372baa1e9)
+program 3 output
+![Screenshot (10)](https://github.com/sahana930/web-programs/assets/136681776/a9a8d24f-6e22-4841-9a2f-b03d30ab9296)
+![Screenshot (9)](https://github.com/sahana930/web-programs/assets/136681776/abc6909c-42d9-477a-bc37-95f20b2db79c)
+
+
 
