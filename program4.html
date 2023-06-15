@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+  </style>
+  <script>
+    function findLeftMostVowel(str) {
+      var vowels = ['a', 'e', 'i', 'o', 'u'];
+      for (var i = 0; i < str.length; i++) {
+        if (vowels.includes(str[i].toLowerCase())) {
+          return i;
+        }
+      }
+      return -1; // Return -1 if no vowel found
+    }
+
+    function reverseNumber(num) {
+      var reversedNum = num.toString().split('').reverse().join('');
+      return parseInt(reversedNum);
+    }
+
+    function processString() {
+      var inputString = document.getElementById('inputString').value;
+      var leftMostVowel = findLeftMostVowel(inputString);
+      var reversedNumber = reverseNumber(leftMostVowel);
+      
+      document.getElementById('leftMostVowel').textContent = leftMostVowel;
+      document.getElementById('reversedNumber').textContent = reversedNumber;
+    }
+  </script>
+</head>
+<body>
+  <h1>String Operations</h1>
+  <label for="inputString">Enter a string:</label>
+  <input type="text" id="inputString" placeholder="Enter a string">
+  <button onclick="processString()">Process</button>
+
+  <h2>Results:</h2>
+  <p>The position of the left-most vowel: <span id="leftMostVowel"></span></p>
+  <p>The number with its digits in reverse order: <span id="reversedNumber"></span></p>
+</body>
+</html>
