@@ -1,0 +1,168 @@
+<?php
+	  $result = '';
+	  $oprand1 = '';
+	  $oprand2 = '';
+	  if(isset($_POST['op'])) {
+	    $oprand1 = $_POST['opr1'];
+	    $oprand2 = $_POST['opr2'];
+	    switch($_POST['op']) {
+	      case '+':
+	        $result = $oprand1 + $oprand2;
+	        break;
+	      
+      case '-':
+	        $result = $oprand1 - $oprand2;
+	        break;
+	      case '*':
+	        $result = $oprand1 * $oprand2;
+	        break;
+	      case '/':
+	        $result = $oprand1 / $oprand2;
+	        break;
+	    }
+	  }
+	?>
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	  <meta charset="UTF-8">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <title>Eight a</title>
+	</head>
+	<body>
+	  <form action="" method="post">
+	    Operator 1: <input type="text" name="opr1"  value="<?=$oprand1 ?>"><br><br>
+	    Operator 2: <input type="text" name="opr2"  value="<?=$oprand2 ?>"><br><br>
+	    <input type="submit" value="+" name="op">
+	    <input type="submit" value="-" name="op">
+	    <input type="submit" value="*" name="op">
+	    <input type="submit" value="/" name="op">
+	  </form>
+	  <div><?=$result ?></div>	</body> </html>
+
+   Prog8b.php    Find the transpose of a matrix
+<?php
+	  error_reporting(0);
+	  $a = array();
+	  $b = array();
+	  $keyboard = fopen("php://stdin","r"); 
+	  print ("No of rows : ");
+	  $rows = fgets($keyboard,80);
+	  print ("No of cols : ");
+	  $cols = fgets($keyboard,80);
+	  print 'Enter the elements of matrix'."\r\n"; 
+	  for ( $i = 0; $i < $rows; $i++ ) {
+	    print 'Enter elements of '.($i + 1).' row'."\r\n"; 
+	    for ( $j = 0; $j < $cols; $j++ ) {
+	      $n = fgets($keyboard,80);
+	      $a[$i][$j] = (int)($n);
+	    }
+	  }
+	  for ( $i = 0; $i < $rows; $i++ )
+	    for ( $j = 0; $j < $cols; $j++ )
+	      $b[$j][$i] = $a[$i][$j];
+	  for ($row = 0; $row < $rows; $row++) {
+	    for ($col = 0; $col < $cols; $col++){
+	      echo " ".$b[$row][$col];
+	    } 
+   echo "\n"; 
+	  }
+	?>
+
+
+
+Prog8c.php  Multiplication of two matrices
+<? php
+  error_reporting (0);
+  $a = array();
+  $b = array();
+  $keyboard = fopen("php://stdin","r");
+  print ("No of rows of first matrix : ");
+  $m = fgets($keyboard,80);
+  print ("No of cols of first matrix : ");
+  $n = fgets($keyboard,80);
+  print ("No of rows of second matrix : ");
+  $p = fgets($keyboard,80);
+  print ("No of cols of second matrix : ");
+  $q = fgets($keyboard,80);
+  if ( $n != $p ){
+    echo 'Multiplication not possible ...'."\r\n"; 
+    exit(0);
+  }
+  print 'Enter the elements of first matrix'."\r\n";
+  for ( $i = 0; $i < $m; $i++ ) {
+   print 'Enter elements of '.$i.' row'."\r\n"; 
+    for ( $j = 0; $j < $n; $j++ ) {
+      $x = fgets($keyboard,80);
+      $a[$i][$j] = (int)($x);
+    }
+  }
+  print 'Enter the elements of second matrix'."\r\n"; 
+  for ( $i = 0; $i < $p; $i++ ) {
+    print 'Enter elements of '.$i.' row'."\r\n"; 
+    for ( $j = 0; $j < $q; $j++ ) {
+      $x = fgets($keyboard,80);
+      $b[$i][$j] = (int)($x);
+    }
+ }
+  echo " The multiplication of matrices: \n";
+  $result=array();
+  for ($i=0; $i < $m; $i++) {
+    for($j=0; $j < $q; $j++){
+      $result[$i][$j] = 0;
+      for($k=0; $k < $n; $k++){
+        $result[$i][$j] += $a[$i][$k] * $b[$k][$j];
+      }
+    }
+  }
+  for ($row = 0; $row < $m; $row++) {
+    for ($col = 0; $col < $q; $col++){
+      echo " ".$result[$row][$col];
+    }
+    echo "\n";
+  }
+?>
+
+Prog8d.php Addition of two matrices
+
+<?php
+  // error_reporting(0);
+  $a = array();
+  $b = array();
+  $keyboard = fopen("php://stdin","r");
+  print ("No of rows : ");
+  $rows = fgets($keyboard,80);
+  print ("No of cols  : ");
+  $cols = fgets($keyboard,80);
+  print 'Enter the elements of first matrix'."\r\n";
+  for ( $i = 0; $i < $rows; $i++ ) {
+    print 'Enter elements of '.($i + 1).' row'."\r\n"; 
+    for ( $j = 0; $j < $cols; $j++ ) {
+      $x = fgets($keyboard,80);
+      $a[$i][$j] = (int)($x);
+    }
+  }
+  print 'Enter the elements of second matrix'."\r\n"; 
+  for ( $i = 0; $i < $rows; $i++ ) {
+    print 'Enter elements of '.($i + 1).' row'."\r\n"; 
+    for ( $j = 0; $j < $cols; $j++ ) {
+      $x = fgets($keyboard,80);
+      $b[$i][$j] = (int)($x);
+    }
+  }
+  $result=array();
+  for ($i=0; $i < $rows; $i++) {
+    for($j=0; $j < $cols; $j++){
+      $result[$i][$j] = $a[$i][$j] + $b[$i][$j];
+    }
+  }
+  print 'Enter the elements of result matrix'."\r\n"; 
+  for ($row = 0; $row < $rows; $row++) {
+    for ($col = 0; $col < $cols; $col++){
+      echo " ".$result[$row][$col];
+    }
+    echo "\n";
+  }
+?>
+
