@@ -12,6 +12,9 @@ program 3 output
 program 4 output
 ![image]![Screenshot (11)](https://github.com/sahana930/web-programs/assets/136681776/28b336ea-da14-4400-a341-245cab995bf3)
 program 5 output![image](https://github.com/sahana930/web-programs/assets/136681776/89a8d7bc-1c40-40a9-b83e-c9b3dc7dfab4)
+program 6 output![image](https://github.com/sahana930/web-programs/assets/136681776/8d11086c-adff-4b2e-b784-3ff68bde7eb1)
+
+
 
 
 
