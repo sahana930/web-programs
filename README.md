@@ -14,6 +14,8 @@ program 4 output
 program 5 output![image](https://github.com/sahana930/web-programs/assets/136681776/89a8d7bc-1c40-40a9-b83e-c9b3dc7dfab4)
 program 6 output![image](https://github.com/sahana930/web-programs/assets/136681776/8d11086c-adff-4b2e-b784-3ff68bde7eb1)
 program 7 output![image](https://github.com/sahana930/web-programs/assets/136681776/430c5b2b-d80a-4b5a-ad54-e4c7a19f517a)
+program 8 output![image](https://github.com/sahana930/web-programs/assets/136681776/c2b95322-caab-433d-95f4-db4148214724)
+
 
 
 
