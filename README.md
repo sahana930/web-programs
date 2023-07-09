@@ -15,7 +15,8 @@ program 5 output![image](https://github.com/sahana930/web-programs/assets/136681
 program 6 output![image](https://github.com/sahana930/web-programs/assets/136681776/8d11086c-adff-4b2e-b784-3ff68bde7eb1)
 program 7 output![image](https://github.com/sahana930/web-programs/assets/136681776/430c5b2b-d80a-4b5a-ad54-e4c7a19f517a)
 program 8 output![image](https://github.com/sahana930/web-programs/assets/136681776/c2b95322-caab-433d-95f4-db4148214724)
-program 9 output![image](https://github.com/sahana930/web-programs/assets/136681776/0bc85739-5b6d-458d-8f7a-a4cf6f79f327)
+program 9 output![image](https://github.com/sahana930/web-programs/assets/136681776/2bc3aae1-2867-46d0-91a2-c37b284cb18e)
+
 
 
 
